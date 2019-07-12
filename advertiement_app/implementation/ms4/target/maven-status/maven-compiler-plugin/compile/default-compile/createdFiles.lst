@@ -1,0 +1,9 @@
+client\AdsClient$2.class
+client\Authentication.class
+beans\User.class
+client\AdsClient.class
+servlet\ShowAllItemsServlet.class
+test\TestServlet.class
+beans\Advertisement.class
+client\AdsClient$1.class
+servlet\LoginServlet.class
