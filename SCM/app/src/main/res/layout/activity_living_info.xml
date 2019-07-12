@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="394dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".Eat.InfoActivity" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="390dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/adresseid"
+                android:layout_width="386dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="Address: Tourist Info"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintBottom_toTopOf="@+id/kategorieid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/map"
+                app:layout_constraintVertical_bias="0.171" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Albertinaplatz 1"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresseid"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="16dp"
+                android:text="1010 Vienna"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/kategorieid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="412dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cardview_dark_background"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/oeffnungszeitenid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"></LinearLayout>
+
+            <TextView
+                android:id="@+id/kategorieid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Category:"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/oeffnungszeitenid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="historical, less parking spaces"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/oeffnungszeitenid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kategorieid" />
+
+            <LinearLayout
+                android:layout_width="425dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cardview_dark_background"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/kategorieid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+            <TextView
+                android:id="@+id/oeffnungszeitenid"
+                android:layout_width="401dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:outlineProvider="none"
+                android:singleLine="false"
+                android:text="Vienna first district"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="507dp" />
+
+            <!-- text source: http://www.tourmycountry.com/austria/first-district-vienna.htm -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:text='Vienna′s first district is called "Innere Stadt", which means "Inner City" and is quite self-explanatory. It is not only the most central of all districts and the legislative focal point of Vienna, it is also the historic core of the city. In fact, until the demolition of the town walls took place in the 19th century, the area that is the first district today was the walled part of Vienna and the modern districts 1 to 9 were suburbs. Even now that most of these suburbs are densely populated and occupy pretty central parts of Vienna, they are still called the "Vorstädte" ("suburbs"). Back to the Inner City It is framed by the Ringstraße, which follows the course of the old town walls. Of all districts in Vienna, the first is the oldest and the only one with noteworthy medieval buildings. It also concentrates the vast majority of all sightseeing attractions of Vienna: Museums, palaces, churches - you name it. If it isn′t in the first district, it is likely to be by or near the Ringstraße and thus in walking distance to the first. Therefore, the first district is also the most touristy - in fact, visitors that stay for only a day or a weekend in Vienna are likely to spend all their time here.'
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oeffnungszeitenid"
+                app:layout_constraintVertical_bias="0.774" />
+
+            <LinearLayout
+                android:layout_width="412dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/cardview_dark_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tourist frequency"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="22sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart1"
+                android:layout_width="fill_parent"
+                android:layout_height="289dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cardview_dark_background"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/oeffnungszeitenid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/webid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="26dp"
+                android:autoLink="web"
+                android:clickable="true"
+                android:text="www.wien.gv.at/bezirke/innerestad"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oeffnungszeitenid"
+                app:layout_constraintVertical_bias="0.923" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

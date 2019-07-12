@@ -1,0 +1,179 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eat.EatFirstResultActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="421dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/event2" />
+    </LinearLayout>
+
+    <!--<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>-->
+    <ImageButton
+        android:id="@+id/smile1id"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="false"
+        android:background="#00404040"
+        android:cropToPadding="false"
+        android:src="@drawable/heart"
+        android:tint="#6A941C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/smile2id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> -->
+    <ImageButton
+        android:id="@+id/smile2id"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/dislike"
+        android:tint="#F3C502"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> -->
+    <ImageButton
+        android:id="@+id/smile4id"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/like"
+        android:tint="#BF2752"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/heart">Heart vector created by rawpixel.com - www.freepik.com</a> -->
+    <ImageButton
+        android:id="@+id/smile3id"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="395dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/chart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/galleryirishid"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="131dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="GALLERY"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F5F1F1"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/feedbackirishid"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#003C3B3B"
+            android:text="FEEDBACK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F5F1F1"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/infoirishid"
+            style="@android:style/Widget.Material.Button.Borderless.Small"
+            android:layout_width="121dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="INFO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F5F1F1"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="397dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/smile2id"
+        app:layout_constraintEnd_toEndOf="@id/smile4id"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="@id/linearLayout3"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

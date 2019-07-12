@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!-- background2 source: https://fineartamerica.com/featured/city-abstract-jolina-anthony.html-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="419dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181"
+        app:srcCompat="@drawable/background2" />
+
+    <!-- living srouce: https://www.freepik.com/ -->
+    <ImageButton
+        android:id="@+id/livingid"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/living"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <!-- living srouce: https://www.freepik.com/ -->
+    <ImageButton
+        android:id="@+id/eventid"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/livingid"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/event" />
+
+    <!-- living srouce: https://www.freepik.com/ -->
+    <ImageButton
+        android:id="@+id/transportid"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livingid"
+        app:srcCompat="@drawable/transport" />
+
+    <!-- living srouce: https://www.freepik.com/authors/monkik -->
+    <ImageButton
+        android:id="@+id/eatbuttonid"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/transportid"
+        app:layout_constraintTop_toBottomOf="@+id/eventid"
+        app:srcCompat="@drawable/food" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="373dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorBack"
+        android:clickable="true"
+        android:closeIcon="@android:drawable/ic_menu_close_clear_cancel"
+        android:commitIcon="@android:drawable/ic_menu_search"
+        android:searchIcon="@android:drawable/ic_menu_search"
+        android:submitBackground="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="248dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.522"
+        app:srcCompat="@drawable/b5" />
+
+
+</android.support.constraint.ConstraintLayout>

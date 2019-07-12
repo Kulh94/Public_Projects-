@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartcityambiance">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"  />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_sca"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:label="SCA"
+        android:roundIcon="@drawable/icon_sca"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Transport.TransportFeedbackActivity"
+            android:parentActivityName=".Transport.TransportFirstResultActivity"
+            android:label="Feedback"/>
+        <activity android:name=".Living.LivingGalleryActivity"
+            android:parentActivityName=".Living.LivingFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Living.LivingFeedbackActivity"
+            android:parentActivityName=".Living.LivingFirstResultActivity"
+            android:label="Feedback"/>
+        <activity android:name=".Living.LivingInfoActivity"
+            android:parentActivityName=".Living.LivingFirstResultActivity"
+            android:label="Info"/>
+        <activity android:name=".Living.LivingFourthResultActivity"
+            android:parentActivityName=".Living.LivingActivity"
+            android:label="Favoriten"/>
+        <activity android:name=".Living.LivingThirdResultActivity"
+            android:parentActivityName=".Living.LivingActivity"
+            android:label="Mariahilf"/>
+        <activity android:name=".Living.LivingSecondResultActivity"
+            android:parentActivityName=".Living.LivingActivity"
+            android:label="Landstraße"/>
+       <activity android:name=".Transport.TransportInfoActivity"
+           android:parentActivityName=".Transport.TransportFirstResultActivity"
+           android:label="Info"/>
+        <activity android:name=".Transport.TransportGalleryActivity"
+            android:parentActivityName=".Transport.TransportFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Event.EventFeedbackActivity"
+            android:parentActivityName=".Event.EventFirstResultActivity"
+            android:label="Feedback"/>
+        <activity android:name=".Event.EventGalleryActivity"
+            android:parentActivityName=".Event.EventFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Eat.FeedbackOneActivity"
+            android:parentActivityName=".Eat.EatFirstResultActivity"
+            android:label="Feedback" />
+        <activity android:name=".Eat.GalleryThirdActivity"
+            android:parentActivityName=".Eat.EatFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Eat.GallerySecondActivity"
+            android:parentActivityName=".Eat.EatFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Eat.GalleryOneActivity"
+            android:parentActivityName=".Eat.EatFirstResultActivity"
+            android:label="Gallery"/>
+        <activity android:name=".Eat.InfoActivity"
+            android:parentActivityName=".Eat.EatFirstResultActivity"
+            android:label="Info"/>
+        <activity android:name=".Event.EventFourthResultActivity"
+            android:parentActivityName=".Event.EventActivity"
+            android:label="Christmas"/>
+        <activity android:name=".Event.EventThirdResultActivity"
+            android:parentActivityName=".Event.EventActivity"
+            android:label="Disco"/>
+        <activity android:name=".Event.EventSecondResultActivity"
+            android:parentActivityName=".Event.EventActivity"
+            android:label="Best Clubs"/>
+        <activity android:name=".Event.EventFirstResultActivity"
+            android:parentActivityName=".Event.EventActivity"
+            android:label="Austria Center"/>
+        <activity android:name=".Event.EventActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Events"/>
+        <activity android:name=".Event.EventInfoActivity"
+            android:parentActivityName=".Event.EventActivity"
+            android:label="Info"/>
+        <activity android:name=".Transport.TransportFourthResultActivity"
+            android:parentActivityName=".Transport.TransportActivity"
+            android:label="Westbahn"/>
+        <activity android:name=".Transport.TransportThirdResultActivity"
+            android:parentActivityName=".Transport.TransportActivity"
+            android:label="Tram"/>
+        <activity android:name=".Transport.TransportSecondResultActivity"
+            android:parentActivityName=".Transport.TransportActivity"
+            android:label="Bus"/>
+        <activity android:name=".Transport.TransportFirstResultActivity"
+            android:parentActivityName=".Transport.TransportActivity"
+            android:label="Main Station"/>
+        <activity android:name=".Transport.TransportActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Public Transports"/>
+        <activity android:name=".Living.LivingFirstResultActivity"
+            android:parentActivityName=".Living.LivingActivity"
+            android:label="First District"/>
+        <activity android:name=".Living.LivingActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Living"/>
+        <activity android:name=".Eat.EatFourthResultActivity"
+            android:parentActivityName=".Eat.EatActivity"
+            android:label="Austrian Food"/>
+        <activity android:name=".Eat.EatThirdResultActivity"
+            android:parentActivityName=".Eat.EatActivity"
+            android:label="American Burger"/>
+        <activity android:name=".Eat.EatSecondResultActivity"
+            android:parentActivityName=".Eat.EatActivity"
+            android:label="Irish Pub"/>
+        <activity android:name=".Eat.EatFirstResultActivity"
+            android:parentActivityName=".Eat.EatActivity"
+            android:label="The Italians"/>
+        <activity android:name=".Eat.EatActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Food"/>
+        <activity android:name=".Navigation.VersionActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Version"/>
+        <activity android:name=".Navigation.FeedbackActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Feedback"/>
+        <activity android:name=".Navigation.RegistrationActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Registration"/>
+        <activity android:name=".Navigation.MyAccountActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="My Account"/>
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="SCA"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
